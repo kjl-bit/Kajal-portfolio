@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+.section {
+    padding: 60px 20px;
+    background: #1e1e1e;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    text-align: center; 
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(135deg, #6c7a3c, #8c9a4e); 
+    color: white;
+    padding: 70px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid white;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #6c7a3c; 
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar h2 {
+    font-size: 1.6em;
+    color: white;
+    float: left;
+}
+
+.navbar .menu-bar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    background: #8c9a4e;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.navbar .menu-bar a {
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 1.1em;
+}
+
+.navbar .menu-bar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar .hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.navbar .hamburger span {
+    width: 25px;
+    height: 4px;
+    background: white;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+
+.projects-experience {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.projects, .experience {
+    background: #252525;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(255, 255, 255, 0.15);
+    width: 48%;
+    text-align: center;
+}
+
+.projects h2, .experience h2 {
+    margin-bottom: 20px;
+    color: #6c7a3c;
+    text-transform: uppercase;
+}
+
+.projects .grid, .experience .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: linear-gradient(135deg, #2e2e2e, #3a3a3a);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(255, 255, 255, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 18px;
+    background: #8c9a4e; 
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.card a:hover {
+    background: #6c7a3c; 
+}
+
+#life-skills, #technical-skills {
+    background: #252525;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+#life-skills ul, #technical-skills ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+#life-skills ul li, #technical-skills ul li {
+    background: #6c7a3c; 
+    padding: 14px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+#education {
+    background: #1e1e1e;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+#education p {
+    background: #252525;
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.footer {
+    background: #8c9a4e; 
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.1em;
+    margin-top: 30px;
+    border-radius: 12px 12px 0 0;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #252525;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #6c7a3c;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 12px 18px;
+    font-size: 1.1em;
+    background-color: #6c7a3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #8c9a4e;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none; 
+    }
+
+    .navbar .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .navbar .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .navbar .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
+
+    .navbar .menu-bar.active {
+        display: flex;
+    }
+
+    .projects, .experience {
+        width: 100%;
+    }
+
+    .navbar .menu-bar a {
+        padding: 8px 10px;
+        font-size: 1.2em;
+    }
+}
